@@ -43,7 +43,7 @@ export class ThunderScans extends MangaStream {
         this.homescreen_sections['top_monthly'].enabled = false
         this.homescreen_sections['top_weekly'].enabled = false
 
-        this.homescreen_sections['latest_update'].selectorFunc = ($: CheerioAPI) => $('div.bsx', $('h2:contains(Latest Update)')?.parent()?.next())
+        this.homescreen_sections['latest_update'].selectorFunc = ($: CheerioAPI) => $('div.bsx', $('h2:contains(Latest Comics)').first()?.parent()?.next())
         this.homescreen_sections['latest_update'].subtitleSelectorFunc = ($: CheerioAPI, element: BasicAcceptedElems<AnyNode>) => $('div.epxs', element).first().text().trim()
     }
 }
