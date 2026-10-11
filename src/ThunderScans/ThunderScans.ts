@@ -19,7 +19,7 @@ import {
 const DOMAIN = 'https://en-thunderscans.com'
 
 export const ThunderScansInfo: SourceInfo = {
-    version: getExportVersion('0.0.0'),
+    version: getExportVersion('0.0.1'),
     name: 'ThunderScans',
     description: `Extension that pulls manga from ${DOMAIN}`,
     author: 'Netsky',
